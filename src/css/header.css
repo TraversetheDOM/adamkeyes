@@ -1,0 +1,61 @@
+/* We need to ensure that the items in the nav are spaced to the end */
+/* We need to stop the nav container from growing more that 1440px  */
+/* We need to find a way to make the header overlap the initial section */
+
+body {
+  position: relative;
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav {
+  padding-top: var(--space-4-6);
+  display: var(--flex);
+  flex-direction: column;
+  gap: var(--gap-12_5);
+}
+
+.nav > p {
+  text-align: center;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-2);
+  line-height: var(--line-height-snug);
+}
+
+.nav > p > a {
+  transition: color 0.4s ease-in 0s;
+}
+
+.nav svg > path {
+  transition: fill 0.4s ease-in 0s;
+}
+
+@media (hover: hover) {
+  .nav > p > a:is(:hover) {
+    color: var(--green);
+  }
+
+  .nav > ul a:is(:hover) > svg > path {
+    fill: var(--green);
+  }
+}
+
+.nav > ul[class~="profiles"] {
+  display: var(--flex);
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-12_5);
+}
+
+@media only screen and (min-width: 48em) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,187 @@
+section[class~="contact"] {
+  background-color: var(--dark-grey);
+  background-image: url(../../assets/images/pattern-rings.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 5.06rem left -21.25rem;
+}
+
+div[class~="contact-container"] {
+  padding-top: var(--space-7-8);
+  padding-bottom: var(--gap-60);
+  border-bottom: 1px solid var(--white);
+  display: var(--flex);
+  flex-direction: column;
+  gap: var(--gap-30);
+}
+
+div[class^="form__"] {
+  position: relative;
+  margin-bottom: var(--gap-20);
+}
+
+div[class^="form__"] > p {
+  text-align: right;
+  margin-top: var(--gap-3_75);
+  font-style: normal;
+  font-weight: var(--fw-500);
+  font-size: 0.75rem;
+  display: block;
+}
+
+div[class^="form__"] > img {
+  position: absolute;
+  top: 8px;
+  right: 1px;
+}
+
+/* Style for the icon error displayed to the user.  */
+img[class~="icon-error__show"] {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.45s ease-out;
+}
+
+img[class~="icon-error__hide"] {
+  opacity: 0;
+  visibility: hidden;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-bottom: 1px solid var(--red);
+}
+
+:is(input[aria-invalid="true"] ~ p, textarea[aria-invalid="true"] ~ p) {
+  color: var(--red);
+}
+
+.btn__submit-form {
+  appearance: none;
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  text-transform: uppercase;
+  font: inherit;
+  line-height: var(--line-height-relaxed);
+  letter-spacing: var(--letter-spacing-widest);
+  cursor: pointer;
+  transition: color 0.4s ease-in;
+}
+
+.btn__submit-form:focus {
+  outline: none;
+}
+
+.btn__submit-form:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 12px;
+}
+
+@media (hover: hover) {
+  .btn__submit-form:hover {
+    color: var(--green);
+  }
+}
+
+.btn__submit-form::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  padding-block: 0.125rem;
+  background-color: var(--green);
+  bottom: -0.38rem;
+}
+
+div[class="contact-text"] {
+  text-align: center;
+  color: var(--white);
+}
+
+.contact-text__heading {
+  font-weight: var(--fw-700);
+  font-style: normal;
+  font-feature-settings: var(--font-feature-settings);
+  font-size: 4.5rem;
+  line-height: var(--line-height-tight);
+  margin-block-end: var(--gap-12_5);
+}
+
+.contact-text__proposal {
+  font-feature-settings: var(--font-feature-settings);
+  font-style: normal;
+  font-weight: var(--fw-500);
+  color: var(--gray);
+  font-size: var(--fs-1);
+  line-height: var(--line-height-relaxed);
+}
+
+*:is(input[id="email"], input[id="name"]) {
+  padding-block-end: var(--gap-10);
+}
+
+*:is(textarea[id="message"]) {
+  padding-block-end: var(--gap-50);
+  scrollbar-color: var(--green) var(--gray);
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+}
+
+textarea[id="message"]::-webkit-scrollbar {
+  width: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 12px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: var(--gray);
+  border-radius: 9px;
+}
+
+/* Responsive design */
+
+/* Tablet devices */
+@media only screen and (min-width: 48em) {
+  section[class~="contact"] {
+    background-position: bottom 1.06rem left -22.25rem;
+  }
+
+  div[class~="contact-container"] > * {
+    width: 58.9%;
+    margin-inline: auto;
+  }
+}
+
+/* Desktop devices */
+@media only screen and (min-width: 90em) {
+  section[class~="contact"] {
+    background-position: bottom 3.06rem left -14.25rem;
+  }
+
+  div[class~="contact-container"] > * {
+    width: unset;
+    margin-inline: unset;
+  }
+
+  div[class~="contact-container"] {
+    flex-direction: row;
+    gap: var(--gap-30);
+  }
+
+  div[class~="contact-container"] > * {
+    flex-basis: 50%;
+  }
+
+  div[class="contact-text"] {
+    text-align: left;
+  }
+
+  .contact-text__heading {
+    margin-bottom: var(--gap-22_5);
+  }
+}
