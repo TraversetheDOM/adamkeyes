@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A portfolio website for a client adam keyes",
   "source": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
+    "start": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
