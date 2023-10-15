@@ -1,0 +1,19 @@
+{
+  "name": "adamkeyes",
+  "version": "1.0.0",
+  "description": "A portfolio website for a client adam keyes",
+  "source": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TraversetheDOM/adamkeyes.git"
+  },
+  "author": "Stephen Ikuomola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TraversetheDOM/adamkeyes/issues"
+  },
+  "homepage": "https://github.com/TraversetheDOM/adamkeyes#readme"
+}
