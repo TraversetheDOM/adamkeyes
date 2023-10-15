@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TraversetheDOM/adamkeyes/issues"
   },
-  "homepage": "https://github.com/TraversetheDOM/adamkeyes#readme"
+  "homepage": "https://github.com/TraversetheDOM/adamkeyes#readme",
+  "devDependencies": {
+    "parcel": "^2.10.0"
+  }
 }
