@@ -16,3 +16,6 @@
 .vscode
 node_modules
 .parcel-cache
+
+#Avoid your project being littered with .prettierignore files
+.prettierignore
