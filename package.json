@@ -6,6 +6,9 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel index.html",
+    "lint": "npx eslint ./src --ext .js",
+    "lint:eslint": " npx eslint --fix .",
+    "lint:prettier": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
