@@ -1,16 +1,16 @@
 {
-  "semi": false, 
-  "trailingComma": "none", 
-  "singleQuote": true, 
+  "semi": false,
+  "trailingComma": "none",
+  "singleQuote": true,
   "overrides": [
     {
-      "files": ["*.html", "*.css"], 
+      "files": ["*.html", "*.css"],
       "options": {
         "singleQuote": false
       }
-    }, 
+    },
     {
-      "files": ["*.js"], 
+      "files": ["*.js"],
       "options": { "semi": true }
     }
   ]

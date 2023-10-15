@@ -1,24 +1,22 @@
 {
   "root": true,
   "env": {
-      "browser": true,
-      "es2021": true
+    "browser": true,
+    "es2021": true
   },
   "extends": ["google", "prettier"],
   "parserOptions": {
-      "ecmaVersion": "latest"
+    "ecmaVersion": "latest"
   },
   "rules": {
-      "quotes": ["error", "single",{ "allowTemplateLiterals": true } ],
-      "no-const-assign": "error",
-      "no-this-before-super": "error", 
-      "constructor-super": "error", 
-      "no-dupe-args": "error", 
-      "no-dupe-class-members": "error", 
-      "no-dupe-keys": "error", 
-      "no-unreachable": "error"
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "no-const-assign": "error",
+    "no-this-before-super": "error",
+    "constructor-super": "error",
+    "no-dupe-args": "error",
+    "no-dupe-class-members": "error",
+    "no-dupe-keys": "error",
+    "no-unreachable": "error"
   },
-  "ignorePatterns": [
-      "node_modules", ".parcel-cache", "dist"
-  ]
+  "ignorePatterns": ["node_modules", ".parcel-cache", "dist"]
 }
