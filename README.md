@@ -5,7 +5,7 @@
 	a contact form that allows potential customers/clients reach out. <br />
   Responsive for all devices using HTML, CSS and JavaScript.
   <br />
-  <a href="https://adamkeyes-ng.netlify.app/"
+  <a href="https://adamkeyes-ng.vercel.app/"
     ><strong>➥ Live Demo</strong></a
   >
 </div>
