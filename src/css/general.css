@@ -356,7 +356,7 @@ div[class~="section-container"],
   margin-inline: auto;
 }
 
-/* .animate > div {
+.animate > div {
   opacity: 0;
   transform: translateY(40px);
 }
@@ -367,4 +367,4 @@ div[class~="section-container"],
   transition:
     transform 2s ease-in,
     opacity 1s ease-in;
-} */
+}
