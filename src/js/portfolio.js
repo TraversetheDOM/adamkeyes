@@ -188,71 +188,71 @@ class FormComponent {
 
 new FormComponent();
 
-/**
- * The class sets up the blue print for bootstrapping the animations
- */
-class BootstrapAnimation {
-  #target;
+// /**
+//  * The class sets up the blue print for bootstrapping the animations
+//  */
+// class BootstrapAnimation {
+//   #target;
 
-  /**
-   *
-   * @param {Node} target - The elements that we will be observing
-   */
-  constructor(target) {
-    this.#target = target;
-    this.#observeIntersection();
-  }
+//   /**
+//    *
+//    * @param {Node} target - The elements that we will be observing
+//    */
+//   constructor(target) {
+//     this.#target = target;
+//     this.#observeIntersection();
+//   }
 
-  /**
-   *
-   * @param {Array<IntersectionObserverEntry>} entries
-   * @param {IntersectionObserver} observer
-   */
-  #handleIntersection(entries, observer) {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('OnIt');
-        if (this.#target instanceof Element) {
-          observer.unobserve(this.#target);
-        }
-      }
-    });
-  }
+//   /**
+//    *
+//    * @param {Array<IntersectionObserverEntry>} entries
+//    * @param {IntersectionObserver} observer
+//    */
+//   #handleIntersection(entries, observer) {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add('OnIt');
+//         if (this.#target instanceof Element) {
+//           observer.unobserve(this.#target);
+//         }
+//       }
+//     });
+//   }
 
-  /**
-   * This method will be called in the constructor to start the intersection observer.
-   */
-  #observeIntersection() {
-    const observerOptions = {
-      root: null,
-      threshold: 0.2,
-      rootMargin: '20px 0px 0px 0px'
-    };
+//   /**
+//    * This method will be called in the constructor to start the intersection observer.
+//    */
+//   #observeIntersection() {
+//     const observerOptions = {
+//       root: null,
+//       threshold: 0.2,
+//       rootMargin: '20px 0px 0px 0px'
+//     };
 
-    const observer = new IntersectionObserver(
-      this.#handleIntersection.bind(this),
-      observerOptions
-    );
+//     const observer = new IntersectionObserver(
+//       this.#handleIntersection.bind(this),
+//       observerOptions
+//     );
 
-    if (this.#target instanceof Element) {
-      observer.observe(this.#target);
-    }
-  }
-}
+//     if (this.#target instanceof Element) {
+//       observer.observe(this.#target);
+//     }
+//   }
+// }
 
-/**
- * The function will instantiate a class that would bootstrap the animation of the page when it loads. You should also be able to use window.addEventListener('load', callback)
- * @return {void}
- */
-function animateOnIt() {
-  const sections = /** @type {NodeList}*/ (
-    document.querySelectorAll('.animate')
-  );
-  sections.forEach(function (section) {
-    // Here due to line breaks which is interpreted as text node, the div element is the second child node in the section element while traversing the DOM.
-    const target = section.childNodes[1];
-    new BootstrapAnimation(target);
-  });
-}
+// /**
+//  * The function will instantiate a class that would bootstrap the animation of the page when it loads. You should also be able to use window.addEventListener('load', callback)
+//  * @return {void}
+//  */
+// function animateOnIt() {
+//   const sections = /** @type {NodeList}*/ (
+//     document.querySelectorAll('.animate')
+//   );
+//   sections.forEach(function (section) {
+//     // Here due to line breaks which is interpreted as text node, the div element is the second child node in the section element while traversing the DOM.
+//     const target = section.childNodes[1];
+//     new BootstrapAnimation(target);
+//   });
+// }
 
-animateOnIt();
+// animateOnIt();
