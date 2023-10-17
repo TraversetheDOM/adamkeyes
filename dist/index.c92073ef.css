@@ -477,6 +477,7 @@ a[href="#contact-me"]:after {
 
   img[class~="adamkeyes-image"] {
     width: 340px;
+    height: 564px;
   }
 
   div[class~="hero-container"] > figure:after {
@@ -516,16 +517,17 @@ a[href="#contact-me"]:after {
 
 @media only screen and (width >= 90em) {
   section[class~="hero"] {
-    background-position: -9rem 7.7rem;
+    background-position: -6rem 7.7rem;
   }
 
   div[class~="hero-container"] > figure {
-    top: -36px;
+    top: -28px;
     right: 0;
   }
 
   img[class~="adamkeyes-image"] {
     width: 445px;
+    height: 708px;
   }
 
   div[class~="hero-container"] > figure:after {

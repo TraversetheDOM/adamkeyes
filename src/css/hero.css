@@ -120,7 +120,7 @@ a[href="#contact-me"]::after {
 
   }
 
-  img[class~="adamkeyes-image"] { width: 340px; }
+  img[class~="adamkeyes-image"] { width: 340px; height: 564px; }
 
 
   div[class~="hero-container"] > figure::after {
@@ -161,15 +161,15 @@ a[href="#contact-me"]::after {
 
 @media only screen and (min-width: 90em) {
   section[class~="hero"] {
-    background-position: top 7.7rem left -9rem;
+    background-position: top 7.7rem left -6rem;
   }
 
   div[class~="hero-container"] > figure {
-    top:-36px; 
+    top:-28px; 
     right: 0;
   }
 
-  img[class~="adamkeyes-image"] { width: 445px; }
+  img[class~="adamkeyes-image"] { width: 445px; height:708px; }
 
   div[class~="hero-container"] > figure::after {
     left: unset;
