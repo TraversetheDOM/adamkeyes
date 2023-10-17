@@ -169,7 +169,7 @@ a[href="#contact-me"]::after {
     right: 0;
   }
 
-  img[class~="adamkeyes-image"] { width: 445px; height:708px; }
+  img[class~="adamkeyes-image"] { width: 445px; height:720px; }
 
   div[class~="hero-container"] > figure::after {
     left: unset;
