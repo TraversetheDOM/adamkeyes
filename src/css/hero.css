@@ -12,7 +12,6 @@ div[class~="hero-container"] {
 
 div[class~="hero-container"] > figure {
   padding-top: var(--gap-50);
-  /* width: 174px; */
   margin-inline: auto;
   background-color: var(--dark-grey);
   position: relative;
@@ -87,17 +86,19 @@ a[href="#contact-me"] {
 }
 
 a[href="#contact-me"]::after {
+  margin-top:0.62rem; 
   content: "";
   display: block;
   width: 100%;
   padding-block: 0.125rem;
   background-color: var(--green);
   position: absolute;
+  
 }
 
 @media only screen and (min-width: 48em) {
   section[class~="hero"] {
-    background-position: top 7.7rem left -22rem;
+    background-position: top 4.7rem left -16rem;
   }
 
   div[class~="hero-container"] {
@@ -110,16 +111,16 @@ a[href="#contact-me"]::after {
     order: 2;
     position: absolute;
     right: -10%;
-    top: 0px;
+    top: 0px; 
     z-index: -1;
-    /* width: 336px; */
-
     /* We want to unset the properties to its inherited value if the property naturally inherits from its parent, and to its initial value if not. In this case both have an initial value of no background-color and no padding-top initially */
     background-color: unset;
     padding-top: unset;
+
+
   }
 
-  img[class~="adamkeyes-image"] { width: 336px; }
+  img[class~="adamkeyes-image"] { width: 340px; }
 
 
   div[class~="hero-container"] > figure::after {
@@ -127,7 +128,7 @@ a[href="#contact-me"]::after {
   }
 
   .introduction-heading {
-    padding-top: 6.9rem;
+    padding-top: 8.2rem;
     text-align: left;
     margin-bottom: var(--gap-40);
     width: 70.125%;
@@ -164,8 +165,8 @@ a[href="#contact-me"]::after {
   }
 
   div[class~="hero-container"] > figure {
+    top:-36px; 
     right: 0;
-    /* width: 445px; */
   }
 
   img[class~="adamkeyes-image"] { width: 445px; }
