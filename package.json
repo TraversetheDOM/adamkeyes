@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TraversetheDOM/adamkeyes.git"
+    "url": "git+https://github.com/stephenikuomola/adamkeyes.git"
   },
   "author": "Stephen Ikuomola",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TraversetheDOM/adamkeyes/issues"
+    "url": "https://github.com/stephenikuomola/adamkeyes/issues"
   },
-  "homepage": "https://github.com/TraversetheDOM/adamkeyes#readme",
+  "homepage": "https://github.com/stephenikuomola/adamkeyes#readme",
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.10.0",
     "@parcel/transformer-webmanifest": "^2.10.0",
