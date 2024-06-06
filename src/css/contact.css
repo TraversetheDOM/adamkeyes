@@ -158,7 +158,7 @@ textarea::-webkit-scrollbar-track {
 }
 
 /* Desktop devices */
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 64em) {
   section[class~="contact"] {
     background-position: bottom 3.06rem left -14.25rem;
   }
@@ -166,15 +166,12 @@ textarea::-webkit-scrollbar-track {
   div[class~="contact-container"] > * {
     width: unset;
     margin-inline: unset;
+    flex-basis: 50%; 
   }
 
   div[class~="contact-container"] {
     flex-direction: row;
     gap: var(--gap-30);
-  }
-
-  div[class~="contact-container"] > * {
-    flex-basis: 50%;
   }
 
   div[class="contact-text"] {

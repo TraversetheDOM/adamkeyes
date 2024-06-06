@@ -159,7 +159,7 @@ a[href="#contact-me"]::after {
   }
 }
 
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 64em) {
   section[class~="hero"] {
     background-position: top 7.7rem left -6rem;
   }

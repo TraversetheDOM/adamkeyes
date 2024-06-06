@@ -17,7 +17,7 @@ div[class="nav"] {
   }
 }
 
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 64em) {
   footer {
     padding-block-start: 2.94rem;
     padding-block-end: 5.75rem;
